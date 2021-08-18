@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header">
+            <h1>Sorting Algorithms</h1>
+        </div>
+        <div class="sorting">
+            <button id='random'>Generate Random Array</button>
+            <button id='reset'>Reset</button>
+            <div class="size">
+                <label for="size">size:</label>
+                <input id='size' value='5' type="range" min="0" max="100" />
+            </div>
+            <div class="speed">
+                <label for="speed">speed:</label>
+                <input id='speed' value='1' type="range" min="0" max="10" />
+            </div>
+            <button id='bubble'>Bubble Sort</button>
+            <button id='selection'>Selection Sort</button>
+            <button id='insertion'>Insertion Sort</button>
+            <button id='quick'>Quick Sort</button>
+        </div>
+    </div>
+
+    <div class="sorting-visualization">
+
+    </div>
+
+    <script type='module' src="./script.js"></script>
+</body>
+
+</html>

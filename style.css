@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar{
+    height: 15%;
+     background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+}
+
+.size{
+   
+    display: flex;
+    align-items: center;
+}
+
+.speed{
+    display: flex;
+   
+    align-items: center;
+}
+.navbar .header{
+    text-align: center;
+}
+
+.navbar .sorting{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+button:disabled{
+    color: gray;
+    cursor:default ;
+}
+.sorting-visualization{
+    padding-left: 40px;
+    
+    padding-right: 40px;
+    width: 92%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sorting-visualization .bars{
+    
+    width: 40px;
+    margin: 0 2px;
+    background-color: lightblue;
+    text-align: center;
+    flex:1;
+}
+
+
+input{
+    cursor: pointer;
+}
+
+.bars.active {
+    background: palevioletred;
+}
+
+.bars.swap{
+    background-color: blueviolet;
+}
+
+.bars.sorted{
+    background-color: orange;
+}
